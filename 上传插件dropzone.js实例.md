@@ -1,6 +1,7 @@
 dropzone.js默认是Ajax上传图片给服务器，那么如何获取到图片名呢？其实我们是可以通过dropzone的success函数获取到服务器返回的数据
 
 dropzone.js在HTML的配置如下：
+
 	Dropzone.autoDiscover = false;//防止报"Dropzone already attached."的错误
         $(".dropzone").dropzone({
         url: "__URL__/upload/",
@@ -41,6 +42,7 @@ dropzone.js在HTML的配置如下：
     });
 
 PHP的代码如下(Thinkphp代码)：
+
 	public function upload()
     {    
 
