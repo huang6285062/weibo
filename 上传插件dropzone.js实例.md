@@ -22,7 +22,7 @@ dropzone.js在HTML的配置如下：
 
                 console.log(obj);
                 
-                if( obj.status == 200 ){
+	                if( obj.status == 200 ){
 
                     //将服务器得到的数据生成一个隐藏域。做商品添加的时候就可以获取到了
                     var input = '<input type="hidden" name="'+obj.details.savename+'" value="'+obj.details.savepath+obj.details.savename+'" />';
@@ -90,6 +90,6 @@ PHP的代码如下(Thinkphp代码)：
 
               echo json_encode($data);
           }
-   }
+    }
 
 
